@@ -1,10 +1,23 @@
 class Pessoa:
-    def __init__(self, nome, idade, status=False, matricula=False):
+    def _init_(self, nome,telefone , cpf, matricula, email):
         self.nome = nome
-        self.idade = idade
-        self.status = status 
+        self.telefone = telefone
+        self.cpf = cpf
         self.matricula = matricula
-    
-    def cursando (self,Nacionalidade,Estado_Civil,Profissão,CPF,Endereço,bairro,cep, curso , local,cadeira , professor):
-        print(f'{self.nome},{Nacionalidade},{Estado_Civil},{Profissão},inscrito no CPF sob o nº:{CPF},\nResidente e domiciliado na:{Endereço},no bairro:{bairro},CEP:{cep},\nEstá cursando {curso} na {local},\nAtualmente está concluindo a cadeira de {cadeira} com o professor {professor}.')
-        self.status = True
+        self.email = email
+
+
+class Funcionario(Pessoa):
+    def _init_(self, matricula, cargo, salario,status):
+        self.__matricula = matricula
+        self._cargo = cargo
+        self._salario = salario
+        self.status = status
+
+class Aluno(Pessoa):
+    def _init_(self, profissao, renda, status):
+        self.profissao = profissao
+        self.renda = renda
+        self.status = status
+
+
