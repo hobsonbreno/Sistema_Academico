@@ -26,7 +26,8 @@ git add .
 # Para commitar digite:
 git commit -m "mensagem da alteração ou criação do codigo em questão"
 # Para empurrar o código para a branch develop digite:
-git push --set-upstream origin develop
+git push --set-upstream origin develop (somente a primeira vez)
+nas proximas basta digitar: git push  
 # Para empurrar o código para todas as branches do github digite:dessa forma sobe para todas as branches criadas no github
 git push --all 
 >>>>>>> develop
