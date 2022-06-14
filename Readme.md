@@ -16,7 +16,7 @@ ________________________________________________________________________________
 # Para atualizar sua maquina  com o codigo mais recente no terminal do VSCODE digite:
 git pull
 # Para unificar o codigo digite :
-git merge
+git merge e a branch que deseja puxar exemplo: estou querendo atualizar a branch main com as informações da develop tenho que digitar : git merge develop
 # Para checar em qual branch voce está?:
 git branch
 # Para mudar de Branch:
