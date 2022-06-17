@@ -1,4 +1,7 @@
-# Documentação.
+# Documentação,Planejamento e Cronograma de entrega do projeto.
+
+Cronograma: https://docs.google.com/document/d/1e5AgKGnQ0wky1OJf1kI7TC_xmp2-ymX_KMMzYcBHFug/edit?usp=sharing
+
 # comando para executar o teste unitário no  framework pytest no terminal do vscode digite :
 pytest 
 ou 
