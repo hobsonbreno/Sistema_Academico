@@ -1,5 +1,4 @@
-from readline import append_history_file
-
+# from readline import append_history_file
 
 class Faculdade:
     def __init__(self):
@@ -9,17 +8,14 @@ class Faculdade:
         self.modalidade = list()
         self.estagio = list()
 
- 
     def inserirAluno(self, aluno):
         self.aluno.append(aluno)
 
     def inserirMatricula(self, matricula):
         self.matricula.append(matricula)
 
-
     def inserirCursos(self, curso):
         self.curso.append(curso)
-
 
     def inserirModalidade(self, modalidade):
         self.modalidade.append(modalidade)
@@ -27,7 +23,5 @@ class Faculdade:
     def imprimir(self):
         print(f'Aluno {self.aluno} da matricula {self.matricula} do curso {self.curso} esta na modalidade {self.modalidade} status Cursando ')
 
-
-
-    def InserirEtagio(self,estagio):
+    def InserirEstagio(self,estagio):
         self.estagio.append(estagio)    
