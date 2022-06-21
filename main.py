@@ -1,13 +1,25 @@
-from Pessoa import Pessoa 
+from faculdade import Faculdade, Aluno
 
-p1 = Pessoa('Hobson Breno Moreira do Nascimento', 35)
-p1.cursando('Analise e Desenvolvimento de Sistemas')
+x = Faculdade()
+x.inserirAluno("hobson")
+x.inserirAluno("wesley")
+x.inserirAluno("rayssa")
 
-p2 = Pessoa('Wesiley', 25)
-p2.cursando('Analise e Desenvolvimento de Sistemas')
+x.inserirMatricula("1111")
+x.inserirMatricula("1212")
+x.inserirMatricula("1313")
 
-p3 = Pessoa('Rayssa', 20)
-p3.cursando('Analise e Desenvolvimento de Sistemas')
+x.inserirCurso("tecnologia")
+x.inserirCurso("ads")
+x.inserirCurso("redes")
 
-p4 = Pessoa('Fabricio', 25)
-p4.cursando('Analise e Desenvolvimento de Sistemas')
+x.inserirModalidade("semi-presencial")
+x.inserirModalidade("ead")
+x.inserirModalidade("presencial")
+
+x.inserirCargos("severino")
+x.inserirCargos("caixa de loterica")
+x.inserirCargos("desempregada")
+
+x.imprimir()
+Aluno.imprimirAluno()
