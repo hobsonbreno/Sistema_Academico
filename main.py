@@ -1,48 +1,25 @@
-from faculdade import Faculdade
+from faculdade import Faculdade, Aluno
 
-while True:
+x = Faculdade()
+x.inserirAluno("hobson")
+x.inserirAluno("wesley")
+x.inserirAluno("rayssa")
 
-    # Menu Inicial
-    print("-"*30)
-    print("""Sistema Acadêmico:
-    [ 1 ] Cadastrar Aluno
-    [ 2 ] Listar Alunos
-    [ 3 ] Sair""")
-    opcao = int(input("Digita sua opção: "))
-    print("-"*30)
+x.inserirMatricula("1111")
+x.inserirMatricula("1212")
+x.inserirMatricula("1313")
 
+x.inserirCurso("tecnologia")
+x.inserirCurso("ads")
+x.inserirCurso("redes")
 
-    # Opção 1: Cadastrar Aluno
-    if opcao == 1:
-        faculdade = Faculdade()
+x.inserirModalidade("semi-presencial")
+x.inserirModalidade("ead")
+x.inserirModalidade("presencial")
 
-        # Adicionando o Nome do Aluno
-        nome = str(input("Digite o Nome do Aluno: "))
-        faculdade.inserirAluno(nome)
+x.inserirCargos("severino")
+x.inserirCargos("caixa de loterica")
+x.inserirCargos("desempregada")
 
-        # Adicionando a Matrícula do Aluno
-        matricula = int(input("Digite a Matrícula do Aluno: "))
-        faculdade.inserirMatricula(matricula)
-
-        # Adicionando o Nome do Curso do Aluno
-        curso = str(input("Digite o Nome do Curso: "))
-        faculdade.inserirCursos(curso)
-
-        # Adicionando a Modalidade do Curso
-        modalidade = str(input("Digite a Modalidade do Curso: "))
-        faculdade.inserirModalidade(modalidade)
-
-        # Testando...
-        print(len(faculdade.matricula))
-    
-
-    # Opção 2: Listar Alunos
-    elif opcao == 2:
-        print("Listar Alunos em Desenvolvimento...")
-    
-
-    # Opção 3: Sair
-    elif opcao == 3:
-        print("Saindo do Sistema...")
-        break
-
+x.imprimir()
+Aluno.imprimirAluno()
