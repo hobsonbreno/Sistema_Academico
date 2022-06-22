@@ -62,7 +62,7 @@ class Aluno(Pessoa):
     def listar_alunos(self):
         for i in range(len(nome_aluno)):
             print('-'*30)
-            print(f" Alunos: {nome_aluno[i]}\n Idade: {idade_aluno[i]}\n CPF: {cpf_aluno[i]}\n Matrícula: {mat_aluno[i]}\n Curso: {curso_aluno[i]}")
+            print(f" Aluno: {nome_aluno[i]}\n Idade: {idade_aluno[i]}\n CPF: {cpf_aluno[i]}\n Matrícula: {mat_aluno[i]}\n Curso: {curso_aluno[i]}")
 
 
 # Classe Filha
@@ -92,7 +92,7 @@ class Funcionario(Pessoa):
     def listar_funcionarios(self):
         for i in range(len(nome_func)):
             print('-'*30)
-            print(f" Alunos: {nome_func[i]}\n Idade: {idade_func[i]}\n CPF: {cpf_func[i]}\n Cargo: {cargo_func[i]}")
+            print(f" Funcionário: {nome_func[i]}\n Idade: {idade_func[i]}\n CPF: {cpf_func[i]}\n Cargo: {cargo_func[i]}")
 
 
 class Curso():
@@ -119,4 +119,4 @@ class Curso():
     def listar_cursos(self):
         for i in range(len(nome_curso)):
             print('-'*30)
-            print(f" Nome: {nome_curso[i]}\n Semestres: {sem_curso[i]}\n CPF: {mod_curso[i]}")
+            print(f" Curso: {nome_curso[i]}\n Semestres: {sem_curso[i]}\n Modalidade: {mod_curso[i]}")
