@@ -23,8 +23,9 @@ class Faculdade():
         cargos.append(estudante)
 
     def imprimir(self):
-        print("alunos:", alunos, "matriculas: ", matriculas, "cursos: ",
-              cursos, "modalidades: ", modalidades, "cargos: ", cargos)
+        for i in range(len(alunos)):
+            print('-'*30)
+            print(f"Alunos: {alunos[i]}\n matriculas: {matriculas[i]}\n cursos: {cursos[i]}\n modalidades: {modalidades[i]}\n cargos: {cargos[i]}")
 
 
 alunos = []

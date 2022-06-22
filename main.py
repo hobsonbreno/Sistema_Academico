@@ -1,25 +1,41 @@
-from faculdade import Faculdade, Aluno
+from faculdade import Faculdade
 
-x = Faculdade()
-x.inserirAluno("hobson")
-x.inserirAluno("wesley")
-x.inserirAluno("rayssa")
+while True:
 
-x.inserirMatricula("1111")
-x.inserirMatricula("1212")
-x.inserirMatricula("1313")
+    # Menu Inicial
+    print("="*30)
+    print("""Sistema Acadêmico:
+    [ 1 ] Cadastrar Aluno
+    [ 2 ] Listar Alunos
+    [ 3 ] Sair""")
+    opcao = int(input("Digita sua opção: "))
+    print("="*30)
 
-x.inserirCurso("tecnologia")
-x.inserirCurso("ads")
-x.inserirCurso("redes")
+    # Criação do Objeto
+    x = Faculdade()
 
-x.inserirModalidade("semi-presencial")
-x.inserirModalidade("ead")
-x.inserirModalidade("presencial")
+    # Opção 1: Cadastrar Dados do Aluno
+    if opcao == 1:
+        aluno = str(input("Digite o nome do aluno: "))
+        x.inserirAluno(aluno)
 
-x.inserirCargos("severino")
-x.inserirCargos("caixa de loterica")
-x.inserirCargos("desempregada")
+        matricula = int(input("Digite o nome do matricula: "))
+        x.inserirMatricula(matricula)
 
-x.imprimir()
-Aluno.imprimirAluno()
+        curso = str(input("Digite o nome do curso: "))
+        x.inserirCurso(curso)
+
+        modalidade = str(input("Digite o nome do modalidade: "))
+        x.inserirModalidade(modalidade)
+
+        cargos = str(input("Digite o nome do cargos: "))
+        x.inserirCargos(cargos)
+
+    # Opção 2: Listar Dados dos Alunos
+    elif opcao == 2:
+        x.imprimir()
+
+    # Opção 3: Sair do Sistema
+    elif opcao == 3:
+        print("Sistema encerrado!")
+        break
