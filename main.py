@@ -10,8 +10,9 @@ while True:
     [ 3 ] Cadastrar Curso
     [ 4 ] Listar Alunos
     [ 5 ] Listar Funcionario
-    [ 6 ] Listar Curso
-    [ 7 ] Sair""")
+    [ 6 ] Listar Cursos Cadastrados pelo ADM
+    [ 7 ] Listar Cursos Cadastrados pelo ALUNO
+    [ 8 ] Sair""")
     opcao = int(input("Digita sua opção: "))
     print("="*30)
 
@@ -69,11 +70,14 @@ while True:
 
     # Opção 6: Listar dados dos Cursos
     elif opcao == 6:
-        curso.listar_cursos()
+        curso.listar_cursos_adm()
 
-
-    # Opção 7: Sair do Sistema
+    # Opção 7: Listar Cursos Cadastrados pelo ALUNO
     elif opcao == 7:
+        aluno.listar_cursos_alunos()
+
+    # Opção 8: Sair do Sistema
+    elif opcao == 8:
         print("Sistema encerrado!")
         break
 

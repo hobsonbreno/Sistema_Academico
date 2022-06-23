@@ -64,6 +64,10 @@ class Aluno(Pessoa):
             print('-'*30)
             print(f" Aluno: {nome_aluno[i]}\n Idade: {idade_aluno[i]}\n CPF: {cpf_aluno[i]}\n Matrícula: {mat_aluno[i]}\n Curso: {curso_aluno[i]}")
 
+    def listar_cursos_alunos(self):
+        for i in range(len(nome_aluno)):
+            print('-'*30)
+            print(f" Curso: {curso_aluno[i]}")
 
 # Classe Filha
 class Funcionario(Pessoa):
@@ -116,7 +120,7 @@ class Curso():
         mod_curso.append(modalidade)
 
     # Método para Listar
-    def listar_cursos(self):
+    def listar_cursos_adm(self):
         for i in range(len(nome_curso)):
             print('-'*30)
             print(f" Curso: {nome_curso[i]}\n Semestres: {sem_curso[i]}\n Modalidade: {mod_curso[i]}")
